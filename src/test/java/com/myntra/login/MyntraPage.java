@@ -20,10 +20,11 @@ public class MyntraPage {
 	@Test
 	public void myntrapage(){
 		
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-notifications");
 		
-						
-		System.setProperty("webdriver.chrome.driver", "C://Users//jayes//OneDrive//Desktop//New//MyntraDemo//Driver//chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C://Users//jayes//OneDrive//Desktop//GitStuff//Driver//chromedriver.exe");
+		WebDriver driver = new ChromeDriver(options);
 		
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		String url = "https://www.myntra.com";
