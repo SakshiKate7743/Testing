@@ -20,6 +20,7 @@ public class TC_LoginTest_001 extends BaseClass
 		logger.info("URL is opened");
 		
 		MyntraPage mp=new MyntraPage(driver);
+		
 		mp.clickmentab();
 		
 		mp.clickphonecase();

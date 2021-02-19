@@ -5,6 +5,7 @@
     <classes>
       <class name="com.myntra.testcases.TC_LoginTest_001">
         <methods>
+          <include name="tearDown"/>
           <include name="myntrapage"/>
           <include name="setup"/>
         </methods>
